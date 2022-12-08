@@ -1,0 +1,7 @@
+mikroe_click/Release/*
+mikroe_click/Debug/*
+*.ini
+/.vs/
+mikroe_click/.atmelstart/
+*.o
+*.d
