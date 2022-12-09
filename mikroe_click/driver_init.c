@@ -506,7 +506,7 @@ void system_init(void)
 	
 	// GPIO on PB16
 
-	gpio_set_pin_level(CLICK_RST,
+	gpio_set_pin_level(CLICK_ON,
 						// <y> Initial level
 						// <id> pad_initial_level
 						// <false"> Low
@@ -514,9 +514,23 @@ void system_init(void)
 						false);
 
 	// Set pin direction to output
-	gpio_set_pin_direction(CLICK_RST, GPIO_DIRECTION_OUT);
+	gpio_set_pin_direction(CLICK_ON, GPIO_DIRECTION_OUT);
 
-	gpio_set_pin_function(CLICK_RST, GPIO_PIN_FUNCTION_OFF);
+	gpio_set_pin_function(CLICK_ON, GPIO_PIN_FUNCTION_OFF);
+	
+	// GPIO on PB17
+
+	gpio_set_pin_level(CLICK_RTS,
+						// <y> Initial level
+						// <id> pad_initial_level
+						// <false"> Low
+						// <true"> High
+						false);
+
+	// Set pin direction to output
+	gpio_set_pin_direction(CLICK_RTS, GPIO_DIRECTION_OUT);
+
+	gpio_set_pin_function(CLICK_RTS, GPIO_PIN_FUNCTION_OFF);
 	
 	// GPIO on PB22
 

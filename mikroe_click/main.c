@@ -24,7 +24,7 @@ int main(void)
 	//USB serial <-> Click serial
 	while (1)
 	{
-		gpio_set_pin_level(CLICK_RST, !gpio_get_pin_level(BUTTON));
+		gpio_set_pin_level(CLICK_ON, !gpio_get_pin_level(BUTTON));
 		
 		if(usbUARTavailable())
 		{

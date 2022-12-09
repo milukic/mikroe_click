@@ -300,7 +300,7 @@
       </AcmeProjectConfig>
     </AcmeProjectConfig>
     <avrtool>com.atmel.avrdbg.tool.atmelice</avrtool>
-    <avrtoolserialnumber>J42700028728</avrtoolserialnumber>
+    <avrtoolserialnumber>J42700008668</avrtoolserialnumber>
     <avrdeviceexpectedsignature>0x1081020F</avrdeviceexpectedsignature>
     <avrtoolinterface>SWD</avrtoolinterface>
     <com_atmel_avrdbg_tool_powerdebugger>
@@ -335,7 +335,7 @@
         <InterfaceName>SWD</InterfaceName>
       </ToolOptions>
       <ToolType>com.atmel.avrdbg.tool.atmelice</ToolType>
-      <ToolNumber>J42700028728</ToolNumber>
+      <ToolNumber>J42700008668</ToolNumber>
       <ToolName>Atmel-ICE</ToolName>
     </com_atmel_avrdbg_tool_atmelice>
   </PropertyGroup>
@@ -528,7 +528,7 @@
   </armgcc.linker.libraries.LibrarySearchPaths>
   <armgcc.linker.optimization.GarbageCollectUnusedSections>True</armgcc.linker.optimization.GarbageCollectUnusedSections>
   <armgcc.linker.memorysettings.ExternalRAM />
-  <armgcc.linker.miscellaneous.LinkerFlags>-Wl,-section-start=.text=0x6000, -Tsaml21j18b_flash.ld</armgcc.linker.miscellaneous.LinkerFlags>
+  <armgcc.linker.miscellaneous.LinkerFlags>-Wl,-section-start=.text=0x0000, -Tsaml21j18b_flash.ld</armgcc.linker.miscellaneous.LinkerFlags>
   <armgcc.assembler.general.IncludePaths>
     <ListValues>
       <Value>%24(PackRepoDir)\arm\CMSIS\5.4.0\CMSIS\Core\Include\</Value>
